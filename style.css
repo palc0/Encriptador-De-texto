@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-1: #E8E8E8;
+    --color-2: #0A3871;
+    --color-3: #FFFFFF;
+    --color-4: #495057;
+    --color-desencriptar: #D8DFE8;
+
+    --fuente-inter: "Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-inter);
+}
+
+body{
+    background-color: var(--color-1);
+}
+
+header{
+    width: 100%;
+    height: 70px;
+}
+
+.logo{
+    width: 100px;
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedorcajatexto{
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    padding-left: 100px;
+    width: 1080px;
+    height: 600px;
+}
+
+.cajatexto{
+    width: 65%;
+    height: 100%;
+    border: none;
+    background-color: var(--color-1);
+    cursor: pointer;
+    color: var(--color-2);
+    font-size: 32px;
+    font-weight: 400;
+    font-family: var(--fuente-inter);
+}
+
+.cajatexto::placeholder{
+    color: var(--color-2);
+}
+
+.cajatexto:focus {
+    outline: none;
+}
+
+.alerta{
+    position: absolute;
+    top: 750px;
+    left: 370px;
+    display: flex;
+    color: var(--color-4);
+}
+
+.contenedor-botones{
+    position: absolute;
+    top: 800px;
+    height: 80px;
+    padding-left: 15%;
+    padding-top: 15px;
+}
+
+.btn-encriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--color-2);
+    color: var(--color-3);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fuente-inter);
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn-encriptar:hover{
+    background-color: #0A3860;
+}
+
+.btn-desencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--color-desencriptar);
+    color: var(--color-2);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fuente-inter);
+    border: 1px solid var(--color-2);
+    cursor: pointer;
+}
+
+.btn-desencriptar:hover{
+    background-color: var(--color-1);
+}
+
+.seccion2{
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 840px;
+    right: 200px;
+    padding-right: 20px;
+    background-color: var(--color-3);
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+
+.contenedormunieco{
+    position: absolute;
+    left: 30px;
+    top: 180px;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.contenedor-parrafo{
+    position: absolute;
+    box-sizing: border-box;
+    top: 570px;
+    left: 40px;
+ }
+
+ .contenedor-parrafo h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--fuente-inter);
+    text-align: center;
+    color: var(--color-4);
+}
+
+.contenedor-parrafo p{
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: var(--color-4);
+    padding-top: 20px;
+}
+
+.contenedor-resultado{
+    position: absolute;
+    bottom: 330px;
+    width: 320px;
+    height: 450px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+
+.contenedor-resultado p{
+    color: var(--color-4);
+    font-size: 25px;
+}
+
+.contenedor-copiar{
+    display: flex;
+    position: absolute;
+    bottom: 400px;
+    top: 700px;
+    background-color: aqua;
+    padding-left: 40px;
+}
+
+.btn-copiar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--color-3);
+    color: var(--color-2);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fuente-inter);
+    border: 1px solid var(--color-2);
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+    right: 4px;
+}
+
+.btn-copiar:hover{
+    background-color: var(--color-desencriptar);
+}
+
+.ocultar{
+    display: none;
+}
